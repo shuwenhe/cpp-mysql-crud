@@ -18,7 +18,7 @@ int main() {
         cout << "✅ Connected to MySQL successfully!" << endl;
 
         // 3️⃣ 选择数据库
-        con->setSchema("test");  // 请确保 test 数据库已创建：CREATE DATABASE test;
+        con->setSchema("shuwen");  // 请确保 test 数据库已创建：CREATE DATABASE test;
 
         // 4️⃣ 创建表（如果不存在）
         unique_ptr<Statement> stmt(con->createStatement());
